@@ -20,11 +20,11 @@
      -->
     
     <!-- Autowired-->
-     <bean id="alien" class="org.ika.springDemo.Alien" autowire="byName">
+     <bean id="alien" class="org.ika.springDemo.Alien" autowire="byType">
     	<property name="age" value="10"></property>	 	   	
     </bean>
     
-     <bean id="comp" class="org.ika.springDemo.Laptop"></bean>
+     <bean id="laptop" class="org.ika.springDemo.Laptop"></bean>
      <!--
      <bean id="comp" class="org.ika.springDemo.Desktop"></bean>
      -->
