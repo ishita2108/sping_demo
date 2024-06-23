@@ -2,9 +2,9 @@ package org.ika.springDemo;
 
 public class Alien {
 	
-	public Alien() {
-		System.out.println("Object created");
-	}
+//	public Alien() {
+//		System.out.println("Object created");
+//	}
 	
 	public Laptop laptop;
 	private int age;
@@ -25,6 +25,11 @@ public class Alien {
 		this.laptop = laptop;
 	}
 	
+	public Alien(int age, Laptop laptop) {
+		this.age = age;
+		this.laptop = laptop;
+	}
+
 	public void compile() {
 		System.out.println("I am coding...");
 		laptop.compile();

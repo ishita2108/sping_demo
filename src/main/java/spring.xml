@@ -6,8 +6,16 @@
 
     <!-- bean definitions here -->
     <bean id="alien" class="org.ika.springDemo.Alien">
+    	<!-- Setter method
     	<property name="age" value="10"></property>
+    	-->
     	<property name="laptop" ref="laptop"></property>
+    	
+    	<!-- constructor arguments -->
+    	<constructor-arg value="15"></constructor-arg>
+    	<constructor-arg ref="laptop"></constructor-arg>
+    	
+    	
     </bean>
     
      <bean id="laptop" class="org.ika.springDemo.Laptop"></bean>
