@@ -7,6 +7,9 @@
     <!-- bean definitions here -->
     <bean id="alien" class="org.ika.springDemo.Alien">
     	<property name="age" value="10"></property>
+    	<property name="laptop" ref="laptop"></property>
     </bean>
+    
+     <bean id="laptop" class="org.ika.springDemo.Laptop"></bean>
 
 </beans>

@@ -6,11 +6,8 @@ public class Alien {
 		System.out.println("Object created");
 	}
 	
+	public Laptop laptop;
 	private int age;
-	
-	public void compile() {
-		System.out.println("I am coding...");
-	}
 
 	public void setAge(int age) {
 		this.age = age;
@@ -18,6 +15,19 @@ public class Alien {
 
 	public int getAge() {
 		return age;
+	}
+
+	public Laptop getLaptop() {
+		return laptop;
+	}
+
+	public void setLaptop(Laptop laptop) {
+		this.laptop = laptop;
+	}
+	
+	public void compile() {
+		System.out.println("I am coding...");
+		laptop.compile();
 	}
 
 }
