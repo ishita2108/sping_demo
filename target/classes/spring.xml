@@ -5,19 +5,28 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="alien" class="org.ika.springDemo.Alien">
-    	<!-- Setter method
-    	<property name="age" value="10"></property>
-    	-->
-    	<property name="laptop" ref="laptop"></property>
+    
+   <!--
+	 <bean id="alien" class="org.ika.springDemo.Alien">
+    	Setter method 
+    	<property name="age" value="10"></property>	
+    	<property name="comp" ref="comp"></property>
     	
-    	<!-- constructor arguments -->
+		constructor arguments 
     	<constructor-arg value="15"></constructor-arg>
     	<constructor-arg ref="laptop"></constructor-arg>
-    	
-    	
+    	   	
+    </bean>
+     -->
+    
+    <!-- Autowired-->
+     <bean id="alien" class="org.ika.springDemo.Alien" autowire="byName">
+    	<property name="age" value="10"></property>	 	   	
     </bean>
     
-     <bean id="laptop" class="org.ika.springDemo.Laptop"></bean>
+     <bean id="comp" class="org.ika.springDemo.Laptop"></bean>
+     <!--
+     <bean id="comp" class="org.ika.springDemo.Desktop"></bean>
+     -->
 
 </beans>

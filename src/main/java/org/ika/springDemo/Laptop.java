@@ -1,8 +1,8 @@
 package org.ika.springDemo;
 
-public class Laptop {
+public class Laptop implements Computer{
 	
 	public void compile() {
-		System.out.println("code compiled!!!!");
+		System.out.println("code compiled -- laptop!!!!");
 	}
 }
